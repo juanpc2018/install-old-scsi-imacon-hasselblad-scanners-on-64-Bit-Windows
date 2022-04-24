@@ -15,7 +15,8 @@ Windows 10 64-Bit
 Windows 11 untested.
 
 Problem #1.
-Driver is Not signed. WHQL
+modified Driver here is Not signed,
+Wont install.
 
 To solve that problem:
 1. Reboot Windows in Advanced Mode to Disable Driver Signature Enforcement Requirement.
