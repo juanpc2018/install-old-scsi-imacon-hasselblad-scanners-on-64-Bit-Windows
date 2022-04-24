@@ -77,9 +77,15 @@ Reboot,
 DONE.
 
 FlexColor 4.0.3 should detect the scanner at start-up,
-also in Devices,
+but scanner must be Turned-On before opening the FlexColor Software,
+at least 3 minutes, to allow Imacon scanner to Boot, or FlexColor Software wont detect it.
+Imacon Photo scanner has a 386sx CPU, with 4MB of RAM.
+cant remember the Speed 20MHz, 33MHz?
+Anyway, it needs time to boot.
+
 Software options should be different,
 Default options are for Digital Cameras.
+Scanner Serial ID should be in Devices Menu in FlexColor 4.0.3 SW.
 
 2. Set Windows in Test mode, to Allow Test Signed Driver.
 bcdedit /set testsigning on
