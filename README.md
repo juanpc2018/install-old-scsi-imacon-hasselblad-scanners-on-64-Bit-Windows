@@ -42,10 +42,10 @@ https://www.macintoshrepository.org/33038-atto-ul4x-and-ul5x-scsi-ultra-320-driv
 Latest UL5D configtool & Firmware for Windows & Linux
 https://members.driverguide.com/driver_search.php
 
-ATTO is more advanced, has many more options to configure,
+ATTO has many more options to configure,
 UL5D has 2x Port VHDCI 68-pin "0.8mm pin",
 Imacon Scanners are Centronics 50-pin Female, and has a small SCSI ID rotary select switch on the back.
-requires an Special Cable from VHDCI to Centronics 50-pin Male,
+requires Special Cable from VHDCI-M to Centronics 50-pin Male,
 3feet or 6 feet, SCSI has limited distance.
 http://www.granitedigital.com/688mmvhdm-50centm3.aspx
 http://www.granitedigital.com/688mmvhdm-50centm6.aspx
@@ -61,7 +61,7 @@ http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
 SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400"
 
 IF Using the Ratocsystems FireWire to SCSI adapter FireREX1 or FS1SX
-Firmware 1.23 1.32 or 1.36
+Firmware 1.23 1.33 or 1.36
 can be used with FireWire800 9-pin to FireWire400 6-pin cable.
 Some old laptops have Firewire 4-pin to 6-pin untested.
 
@@ -80,14 +80,14 @@ Select Standard Ground Shipping and will give automatically a Download Link.
 Japanese websites are strange.
 
 The Optional paid config tool + Firmware 1.36 its designed for Windows Vista Only, 
-does Not work in Windows8.1 64-Bit, using Vista compatibility installs, runs, but does Not detect the Scsi converter, gives error.
-Windows7 64-Bit untested, but probaly wont work.
+does Not work in Windows8.1 64-Bit, using Vista compatibility mode, installs, runs, but does Not detect the Scsi converter, gives error.
+Windows7 64-Bit untested, probaly wont work.
 Optional paid Config Tool is Vista Only.
 
-The paid 1.36 Firmware vs. Free 1.32 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
+The paid 1.36 Firmware vs. Free 1.33 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
 Older Firmware 1.32 or 1.23 does Not have that, FireWire Power is Always ON.
 
-Install Driver in Windows8.1 from Device Manager,
+Install .inf Driver in Windows8.1 from Device Manager,
 Select Have a Disk,
 will ask what kind of Driver is...
 select Image Devices.
@@ -96,6 +96,7 @@ choose disk...
 Download this .inf file
 search x64.INF in your download folder
 select proper Scanner from List.
+Wait until install is complete, takes time.
 Reboot,
 DONE.
 
@@ -107,7 +108,7 @@ cant remember the Speed 20MHz, 33MHz?
 Anyway, it needs time to boot.
 
 Software options should be different,
-Default options are for Digital Cameras.
+Default FC options are for Digital Cameras.
 Scanner Serial ID should be in Devices Menu in FlexColor 4.0.3 SW.
 
 2. Set Windows in Test mode, to Allow Test Signed Driver.
