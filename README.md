@@ -7,26 +7,16 @@ That driver is for 32-Bit Only, Does Not work.
 requires a small modification to allow Windows Imagine Devices to Detect the Driver in 64-Bit Windows. 
 
 Tested:
-XP 64-Bit
-
-Vista 64-Bit
-
-Windows7 64-Bit
-
-Windows 8.1 64-Bit
-
-Windows 10 64-Bit
-
-Windows 11 untested.
+XP 64-Bit, Vista 64-Bit, Windows7 64-Bit, Windows 8.1 64-Bit, Windows 10 64-Bit, Windows 11 untested.
 
 Problem #1.
 modified Driver here is Not signed,
 Wont install.
 
 To solve that problem:
-1. Reboot Windows in Advanced Mode to Disable Driver Signature Enforcement Requirement.
+1. Reboot Windows8.1 in Advanced Mode to Disable Driver Signature Enforcement Requirement.
 
-Windows 8.1 procedure, similar for W10:
+Windows8.1 procedure is similar for W10:
 PC Settings.
 Update & Recovery.
 Recovery.
