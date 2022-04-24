@@ -1,10 +1,17 @@
 # install-old-scsi-imacon-hasselblad-scanners-on-64-Bit-Windows
 
-The 32-Bit .INF file has a small modification to allow Imagine Devices to Detect the Driver in 64-Bit. 
+You need Hasselblad FlexColor 4.0.3 thats the latest version that supports SCSI scanners.
+after installing,
+The 32-Bit .INF driver is located on C:/Program Files (32-Bit)/Hasselblad/INF
+That driver is for 32-Bit Only, Does Not work.
+requires a small modification to allow Windows Imagine Devices to Detect the Driver in 64-Bit. 
 
-Works in Windows7 64-Bit, 
+Tested:
+XP 64-Bit
+Vista 64-Bit
+Windows7 64-Bit
 Windows 8.1 64-Bit
-Windows 10 64-Bit,
+Windows 10 64-Bit
 Windows 11 untested.
 
 Problem #1.
@@ -13,25 +20,55 @@ Driver is Not signed. WHQL
 To solve that problem:
 1. Reboot Windows in Advanced Mode to Disable Driver Signature Enforcement Requirement.
 
-Windows 8.1 procedure:
+Windows 8.1 procedure, similar for W10:
 PC Settings.
 Update & Recovery.
 Recovery.
 Advanced Startup.
+Rwboot Now.
 Option 7 or F7
 
-Device Manager,
-Select the SCSI device usually with a Yellow Triangle.
+Then Windows will boot normally,
+in Device Manager,
+Select the SCSI device usually with a Yellow Triangle,
+requires the SCSI scanner connected and Turned-ON.
+IF Using the Ratocsystems FireWire to SCSI.
+FireREX1 or FS1SX
+Bios 1.23 1.32 or 1.36
+can be used with FireWire800 9-pin to FireWire 400 6-pin cable / converter.
+Some computers have Firewire 4-pin to 6-pin untested.
 
-Install Driver from Select Disk,
-search .INF driver
+Ratoc SCSI converter must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
+
+The Configurator Tool for PowerMac G4 works in OSX SnowLeopard 10.6.8 for intel with Rosetta PPC CPU emulator installed.
+also Ratoc has a Free version for WindowsXP 32-Bit, 64-Bit untested.
+
+There is an optional paid Config Tool $20usd. in the Japan Ratoc web store. 
+English website store is broken,
+
+To purchase the optional driver + 1.36 FW.
+requires Website translator, Chrome or Yandex browser.
+Select Ground Shipping, and will automatically give a Download Link.
+
+The Optional paid config tool + Firmware 1.36 its designed for Windows Vista Only, 
+does Not work in Windows8.1 64-Bit.
+Windows7 64-Bit untested, but probaly wont work.
+
+The 1.36 Firmware vs. Free 1.32 or 1.23 is the aditional support for Power Management Stand-By feature introduced in Vista.
+Older FW does Not have that, is Always ON.
+
+Install Driver in Windows8.1 from Device Manager,
+Select Have a Disk,
 will ask what kind of Driver is...
 select Image Devices.
-Should be a Imacon or Hasselblad manufacturer,
-or choose disk...
+Should be a Imacon or Hasselblad manufacturer, but Not the Scanner,
+choose disk...
+Download this .inf file
+search x64.INF driver in your download folder
 select proper Scanner from List.
 Reboot,
 DONE.
+
 
 2. Set Windows in Test mode, to Allow Test Signed Driver.
 bcdedit /set testsigning on
