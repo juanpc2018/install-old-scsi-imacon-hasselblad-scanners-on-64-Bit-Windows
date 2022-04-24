@@ -84,8 +84,8 @@ does Not work in Windows8.1 64-Bit, using Vista compatibility installs, runs, bu
 Windows7 64-Bit untested, but probaly wont work.
 Optional paid Config Tool is Vista Only.
 
-The 1.36 Firmware vs. Free 1.32 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
-Older FirmWare does Not have that, FireWire Power is Always ON.
+The paid 1.36 Firmware vs. Free 1.32 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
+Older Firmware 1.32 or 1.23 does Not have that, FireWire Power is Always ON.
 
 Install Driver in Windows8.1 from Device Manager,
 Select Have a Disk,
