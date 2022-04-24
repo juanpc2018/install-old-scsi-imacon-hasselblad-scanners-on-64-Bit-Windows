@@ -4,7 +4,7 @@ You need Hasselblad FlexColor 4.0.3 thats the latest version that supports SCSI 
 after installing,
 The 32-Bit .INF driver is located on C:/Program Files (32-Bit)/Hasselblad/INF
 That driver is for 32-Bit Only, Does Not work.
-requires a small modification to allow Windows Imagine Devices to Detect the Driver in 64-Bit. 
+requires a small modification to allow Windows Imagine Devices to Detect the Driver in 64-Bit Windows. 
 
 Tested:
 XP 64-Bit
