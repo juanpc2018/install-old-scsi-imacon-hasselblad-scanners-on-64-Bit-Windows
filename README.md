@@ -51,13 +51,13 @@ The best made were from GraniteDigital Part# 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
 http://www.granitedigital.com/scsispecsheet.aspx
 
-Ratoc is almost Plug´n Play, very easy to configure.
+Ratoc FireREX1 | FS1SX is almost Plug´n Play, very easy to configure.
 has HD50 SCSI Male, requires HD50-Female to Centronics 50-Pin Male adapter/converter.
 http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
 SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400", 
 AC-DC Adapter is Not needed, Imacon Scanners Powers the Ratoc scsi converter.
 
-IF Using Ratocsystems FireWire to SCSI adapter: FireREX1 or FS1SX
+IF Using Ratocsystems FireWire to SCSI adapter: 
 Firmware 1.23 1.33 or 1.36
 can be used with FireWire800 9-pin to FireWire400 6-pin cable.
 Some old laptops have Firewire 4-pin to 6-pin untested.
