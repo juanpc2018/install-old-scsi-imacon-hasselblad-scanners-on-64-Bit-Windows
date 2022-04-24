@@ -82,7 +82,7 @@ Windows7 64-Bit untested, probaly wont work.
 Optional paid Config Tool is Vista Only.
 
 The paid Firmware 1.36 vs. Free 1.33 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
-Older Firmware 1.32 or 1.23 does Not have that, FireWire Power is Always ON.
+Older Firmware 1.33 or 1.23 does Not have that, FireWire Power is Always ON.
 
 Install .inf Driver in Windows8.1 from Device Manager,
 Select Have a Disk,
