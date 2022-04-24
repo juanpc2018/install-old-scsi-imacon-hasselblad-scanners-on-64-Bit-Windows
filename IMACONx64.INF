@@ -1,0 +1,131 @@
+; IMACON.INF  -- Windows Imacon Scanner & Camera Setup File
+; For Firewire and SCSI scanners and cameras
+; For Windows Me, 2000 and Windows XP
+; Copyright (c) 2001 Imacon AS
+; Manufacturer:  Imacon AS - SJ.
+
+
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Msft%
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+
+[Manufacturer]
+%Mfg%=Models,NTamd64
+
+[Models.NTamd64]                          
+%DeviceDescP2DTPLoaderSCSI% = Imacon.Scanner,SCSI\ScannerImacon__SCSI_Loader_____
+%DeviceDescA3LoaderSCSI%    = Imacon.Scanner,SCSI\ScannerImacon__SCSI_Loader__A3_
+%DeviceDescDTPSCSI%  =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_DTP___
+%DeviceDescP1SCSI%   =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_______
+%DeviceDescP2SCSI%   =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_II____
+%DeviceDescP3SCSI%   =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_III___
+%DeviceDescA3SCSI%   =        Imacon.Scanner,SCSI\ScannerImacon__Progression_____
+%DeviceDescA33SCSI%  =        Imacon.Scanner,SCSI\ScannerImacon__Progression_III_
+%DeviceDesc848SCSI%  =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_848___
+%DeviceDesc646SCSI%  =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_646___
+%DeviceDesc343SCSI%  =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_343___
+%DeviceDesc2848SCSI% =        Imacon.Scanner,SCSI\ScannerImacon__FlexTight_2848__
+
+%DeviceDescP2DTPLoaderFW% =   Imacon.Scanner,SBP2\Imacon__SCSI_Loader_____&CMDSETID104D8
+%DeviceDescA3LoaderFW%    =   Imacon.Scanner,SBP2\Imacon__SCSI_Loader__A3_&CMDSETID104D8
+%DeviceDescDTPFW%    =        Imacon.Scanner,SBP2\Imacon__FlexTight_DTP___&CMDSETID104D8
+%DeviceDescP1FW%     =        Imacon.Scanner,SBP2\Imacon__FlexTight_______&CMDSETID104D8
+%DeviceDescP2FW%     =        Imacon.Scanner,SBP2\Imacon__FlexTight_II____&CMDSETID104D8
+%DeviceDescP3FW%     =        Imacon.Scanner,SBP2\Imacon__FlexTight_III___&CMDSETID104D8
+%DeviceDescA3FW%     =        Imacon.Scanner,SBP2\Imacon__Progression_____&CMDSETID104D8
+%DeviceDescA33FW%    =        Imacon.Scanner,SBP2\Imacon__Progression_III_&CMDSETID104D8
+%DeviceDesc848FW%    =        Imacon.Scanner,SBP2\Imac&Flextight_848___&CMDSETID104D8
+%DeviceDesc848FW%    =        Imacon.Scanner,SBP2\Imacon__&Flextight_848___&CMDSETID104D8
+%DeviceDesc949FW%    =        Imacon.Scanner,SBP2\Imacon__&Flextight_949___&CMDSETID104D8
+%DeviceDesc646FW%    =        Imacon.Scanner,SBP2\Imacon__&Flextight_646___&CMDSETID104D8
+%DeviceDesc343FW%    =        Imacon.Scanner,SBP2\Imacon__&Flextight_343___&CMDSETID104D8
+%DeviceDesc2848FW%   =        Imacon.Scanner,SBP2\Imacon__&Flextight_2848__&CMDSETID104D8
+%DeviceDescRFFW%     =        Imacon.Scanner,SBP2\Imacon__&Flextight_RF____&CMDSETID104D8
+
+%DeviceDescCameraSCSI% =      Imacon.Camera,SCSI\ScannerColrCrspCarnival_3020CPU
+%DeviceDescCameraFW% =        Imacon.Camera,SBP2\ColrCrspCarnival_3020CPU&CMDSETID104D8
+%DeviceDescIxpress%  =        Imacon.Camera,SBP2\Imacon__&Ixpress_Bank____&CMDSETID104D8
+%DeviceDescIxpress2% =        Imacon.Camera,SBP2\Hasselblad__&Ixpress_X29_____&CMDSETID104D8
+
+
+[DestinationDirs]
+DefaultDestDir=11                                  ; LDID_SYS
+Imacon.Scanner.CopySys32Files=10,system32\drivers  ; LDID_WIN
+
+[Imacon.Scanner]
+Include=sti.inf
+Needs=STI.SCSISection
+SubClass=StillImage
+DeviceType=1
+AddReg=Imacon.Scanner.AddReg
+CopyFiles=Imacon.Scanner.CopySys32Files
+DelFiles=Imacon.Scanner.DelSysFiles
+
+[Imacon.Camera]
+Include=sti.inf
+Needs=STI.SCSISection
+SubClass=StillImage
+DeviceType=2
+AddReg=Imacon.Scanner.AddReg
+CopyFiles=Imacon.Scanner.CopySys32Files
+DelFiles=Imacon.Scanner.DelSysFiles
+
+[Imacon.Scanner.Services]
+Include=sti.inf
+Needs=STI.SCSISection.Services
+
+[Imacon.Camera.Services]
+Include=sti.inf
+Needs=STI.SCSISection.Services
+
+[Imacon.Scanner.AddReg]
+HKR,,HardwareConfig,1,2
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,"scsiscan.sys"
+
+[Imacon.Scanner.CopySys32Files]
+scsiscan.sys
+
+[Imacon.Scanner.DelSysFiles]
+; Temporarily delete these files from windows\system during install so it
+; doesn't conflict with new location in windows\system32
+scsiscan.sys,,,1
+
+[Strings]
+Msft="Imacon"
+Mfg="Imacon"
+DeviceDescP2DTPLoaderSCSI  = "Imacon P2/DTP Scanner SCSI Loader for SCSI"
+DeviceDescA3LoaderSCSI     = "Imacon A3 Scanner SCSI Loader for SCSI"
+DeviceDescDTPSCSI    = "Imacon FlexTight Photo Scanner for SCSI"
+DeviceDescP1SCSI     = "Imacon FlexTight Precision Scanner for SCSI"
+DeviceDescP2SCSI     = "Imacon FlexTight Precision II Scanner for SCSI"
+DeviceDescP3SCSI     = "Imacon FlexTight Precision III Scanner for SCSI"
+DeviceDescA3SCSI     = "Imacon FlexTight Progression Scanner for SCSI"
+DeviceDescA33SCSI    = "Imacon FlexTight Progression III Scanner for SCSI"
+DeviceDesc848SCSI    = "Imacon Flextight 848 Scanner for SCSI"
+DeviceDesc646SCSI    = "Imacon Flextight 646 Scanner for SCSI"
+DeviceDesc2848SCSI   = "Imacon Flextight 2848 Scanner for SCSI"
+
+DeviceDescP2DTPLoaderFW  = "Imacon P2/DTP Scanner SCSI Loader for Firewire"
+DeviceDescA3LoaderFW     = "Imacon A3 Scanner SCSI Loader for Firewire"
+DeviceDescDTPFW          = "Imacon FlexTight Photo Scanner for Firewire"
+DeviceDescP1FW           = "Imacon FlexTight Precision Scanner for Firewire"
+DeviceDescP2FW           = "Imacon FlexTight Precision II Scanner for Firewire"
+DeviceDescP3FW           = "Imacon FlexTight Precision III Scanner for Firewire"
+DeviceDescA3FW           = "Imacon FlexTight Progression Scanner for Firewire"
+DeviceDescA33FW          = "Imacon FlexTight Progression III Scanner for Firewire"
+DeviceDesc848FW          = "Imacon Flextight 848 Scanner for Firewire"
+DeviceDesc949FW          = "Imacon Flextight 949 Scanner for Firewire"
+DeviceDesc646FW          = "Imacon Flextight 646 Scanner for Firewire"
+DeviceDesc343FW          = "Imacon Flextight 343 Scanner for Firewire"
+DeviceDesc2848FW         = "Imacon Flextight 2848 Scanner for Firewire"
+DeviceDescRFFW           = "Imacon Flextight RF Scanner for Firewire"
+
+DeviceDescCameraSCSI     = "Imacon FlexFrame 3020/4040 Camera for SCSI"
+DeviceDescCameraFW       = "Imacon FlexFrame 3020/4040 Camera for Firewire"
+
+DeviceDescIxpress        = "Imacon Ixpress Bank for Firewire"
+DeviceDescIxpress2       = "Hasselblad Ixpress H system for Firewire"
