@@ -46,7 +46,7 @@ http://www.granitedigital.com/688mmvhdm-50centm3.aspx
 http://www.granitedigital.com/688mmvhdm-50centm6.aspx
 
 SCSI Requires an Active or Passive Centronics SCSI 50-pin Male terminator dongle.
-SCSI Terminator is Not Low to GND, is High to 66% +Vcc, Active Terminator Recomended, has voltage regulators more precise than Passive Restor Network or Diode Voltage Divider.
+SCSI Terminator is Not Low to GND, is High to 66% +Vcc, Active Terminator Recomended, has voltage regulators more precise than Passive Resistor Network or Diode Voltage Divider.
 The best made were from GraniteDigital Part# 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
 http://www.granitedigital.com/scsispecsheet.aspx
