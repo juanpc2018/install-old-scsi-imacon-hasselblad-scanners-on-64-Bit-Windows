@@ -43,16 +43,20 @@ Latest UL5D configtool & Firmware for Windows & Linux
 https://members.driverguide.com/driver_search.php
 
 ATTO is more advanced, has many more options to configure,
-ATTO has 2x Port VHDCI 68-pin,
-Imacon Scanners are Centronics 50-pin Female, have a small SCSI ID on the back.
+ATTO UL5D has 2x Port VHDCI 68-pin "0.8mm pin",
+Imacon Scanners are Centronics 50-pin Female, and has a small SCSI ID rotary switch on the back.
 require an Special Cable from VHDCI to Centronics 50-pin Male,
+3feet or 6 feet, SCSI has limited distance.
+http://www.granitedigital.com/688mmvhdm-50centm3.aspx
+http://www.granitedigital.com/688mmvhdm-50centm6.aspx
 
 SCSI Scanners Require an Active or Passive Centronics SCSI 50-pin Male terminator device.
 The best made were Granite Digital Part Number 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
+http://www.granitedigital.com/scsispecsheet.aspx
 
 Ratoc is almost Plug´n Play, very easy to configure.
-has HD50 Male, requires an HD50-Female to Centronix 50-Pin Male adapter/converter.
+has HD50 Male, requires HD50-Female to Centronics 50-Pin Male adapter/converter.
 http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
 SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400"
 
