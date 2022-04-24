@@ -36,10 +36,16 @@ click Device Manager
 Select the SCSI device usually with a Yellow Triangle,
 requires the SCSI scanner connected and Turned-ON.
 If Using ATTO UL5D PCIe card, requires to be turned-on since PC is turned-On,
-IF Using the Ratocsystems FireWire to SCSI, is Hot Plug.
-FireREX1 or FS1SX
-Bios 1.23 1.32 or 1.36
-can be used with FireWire800 9-pin to FireWire 400 6-pin cable / converter.
+latest drivers for OSX here:
+https://macintoshgarden.org/apps/atto-ul4x-and-ul5x-scsi-ultra-320-drivers
+https://www.macintoshrepository.org/33038-atto-ul4x-and-ul5x-scsi-ultra-320-drivers
+Latest UL5D configtool & Firmware for Windows & Linux
+https://members.driverguide.com/driver_search.php
+
+
+IF Using the Ratocsystems FireWire to SCSI adapter FireREX1 or FS1SX
+Firmware 1.23 1.32 or 1.36
+can be used with FireWire800 9-pin to FireWire400 6-pin cable / converter.
 Some computers have Firewire 4-pin to 6-pin untested.
 
 Ratoc SCSI converter must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
