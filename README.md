@@ -42,14 +42,27 @@ https://www.macintoshrepository.org/33038-atto-ul4x-and-ul5x-scsi-ultra-320-driv
 Latest UL5D configtool & Firmware for Windows & Linux
 https://members.driverguide.com/driver_search.php
 
+ATTO is more advanced, has many more options to configure,
+ATTO has 2x Port VHDCI 68-pin,
+Imacon Scanners are Centronics 50-pin Female, have a small SCSI ID on the back.
+require an Special Cable from VHDCI to Centronics 50-pin Male,
+
+SCSI Scanners Require an Active or Passive Centronics SCSI 50-pin Male terminator device.
+The best made were Granite Digital Part Number 7359
+http://www.granitedigital.com/50pincentronicsm.aspx
+
+Ratoc is almost Plug´n Play, very easy to configure.
+has HD50 Male, requires an HD50-Female to Centronix 50-Pin Male adapter/converter.
+http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
+SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400"
 
 IF Using the Ratocsystems FireWire to SCSI adapter FireREX1 or FS1SX
 Firmware 1.23 1.32 or 1.36
-can be used with FireWire800 9-pin to FireWire400 6-pin cable / converter.
-Some computers have Firewire 4-pin to 6-pin untested.
+can be used with FireWire800 9-pin to FireWire400 6-pin cable.
+Some old laptops have Firewire 4-pin to 6-pin untested.
 
-Ratoc SCSI converter must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
-Scanners are Async, SCSI HDD are Sync.
+Ratoc SCSI converter or ATTO SCSI PCIe must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
+Scanners are Async.
 
 The Free Ratoc Configurator Tool for PowerMac G4 works in OSX SnowLeopard 10.6.8 for intel with Rosetta PPC CPU emulator if installed.
 also Ratoc has a Free config tool for WindowsXP 32-Bit, 64-Bit untested.
