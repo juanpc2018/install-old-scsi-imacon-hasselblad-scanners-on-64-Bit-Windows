@@ -71,19 +71,20 @@ also Ratoc has a Free config tool for WindowsXP 32-Bit Only, 64-Bit untested, do
 There is an optional paid ConfigTool $20usd. in the Japan Ratoc web store. 
 English web store is broken,
 
-To purchase the optional configtool + 1.36 FW.
+To purchase the optional configtool v1.60 + 1.36 FW.
 requires Website translator, Chrome, Vivaldi or browser.Yandex.com 
 Select Standard Ground Shipping and will give automatically a Download Link at Check-Out.
 Japanese websites are strange.
 
-Optional paid configtool + Firmware 1.36 is designed for Windows Vista, 
-Paid ConfigTool does Not work in Windows8.1 64-Bit, with Vista compatibility, installs, runs, but does Not detect the Scsi converter, gives error.
+Optional paid configtool v1.60 + Firmware 1.36 is designed for Windows Vista, 
+Paid ConfigTool v1.60 does Not work in Windows8.1 64-Bit with Vista compatibility, installs, runs, but does Not detect the Scsi converter, gives error.
 Windows7 64-Bit untested, probably wont work.
-Paid ConfigTool is Vista Only.
-Free ConfigTool is XP Only.
+Paid ConfigTool v1.60 is Vista Only.
+Free ConfigTool v1.46 is XP Only.
 
 The paid Firmware 1.36 vs. Free 1.33 or 1.23 is the aditional support for Power Management Stand-By feature for FireWire introduced in Vista.
 Older Firmware 1.33 or 1.23 does Not have that, FireWire Power is Always ON.
+FW 1.23 maybe required in OS9.2 and older OSX 10.2
 
 Install .inf Driver in Windows8.1 from Device Manager,
 Select Have a Disk,
