@@ -114,6 +114,6 @@ Scanner Serial ID should be in Devices Menu in FlexColor 4.0.3 SW.
 2. Set Windows in Test mode, to Allow Test Signed Driver.
 bcdedit /set testsigning on
 But this method only works with TestSigned drivers.
-This driver is Old XP era, probably this method wont work.
+This driver is Old XP era, probably this method wont work. Untested.
 
 
