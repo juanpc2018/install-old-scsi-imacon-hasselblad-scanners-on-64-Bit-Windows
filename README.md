@@ -51,7 +51,7 @@ The best made were from GraniteDigital Part# 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
 http://www.granitedigital.com/scsispecsheet.aspx
 
-Ratoc FireREX1 | FS1SX is almost Plug´n Play, very easy to configure.
+Ratoc FireREX1 | FS1SX is almost Plug´n Play, very easy to configure, 
 has HD50 SCSI Male, requires HD50-Female to Centronics 50-Pin Male adapter/converter.
 http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
 SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400", 
