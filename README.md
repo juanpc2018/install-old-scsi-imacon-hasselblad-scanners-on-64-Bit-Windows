@@ -45,22 +45,24 @@ requires Special Cable from VHDCI-M to Centronics 50-pin Male,
 http://www.granitedigital.com/688mmvhdm-50centm3.aspx
 http://www.granitedigital.com/688mmvhdm-50centm6.aspx
 
-SCSI Scanners Require an Active or Passive Centronics SCSI 50-pin Male terminator dongle device.
-The best made were by Granite Digital Part Number 7359
+SCSI Scanners Require an Active or Passive Centronics SCSI 50-pin Male terminator dongle.
+SCSI Terminator is Not Low to GND, is High to Vcc-2vDC, Active Terminator Recomended, has voltage regulators.
+The best made were by GraniteDigital Part# 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
 http://www.granitedigital.com/scsispecsheet.aspx
 
 Ratoc is almost Plug´n Play, very easy to configure.
 has HD50 SCSI Male, requires HD50-Female to Centronics 50-Pin Male adapter/converter.
 http://www.granitedigital.com/50fmicrodto50mcentronics.aspx
-SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400"
+SCSI Terminator, and Firewire Cable 6-6 "400-400" or 9-6 "800-400", 
+AC-DC Adapter is Not needed, Imacon Scanners Powers the Ratoc scsi converter.
 
-IF Using the Ratocsystems FireWire to SCSI adapter FireREX1 or FS1SX
+IF Using Ratocsystems FireWire to SCSI adapter: FireREX1 or FS1SX
 Firmware 1.23 1.33 or 1.36
 can be used with FireWire800 9-pin to FireWire400 6-pin cable.
 Some old laptops have Firewire 4-pin to 6-pin untested.
 
-Ratoc FW-SCSI converter or ATTO SCSI PCIe must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
+Ratoc FW-to-SCSI converter or ATTO SCSI PCIe must be configured to be Async, Not Sync 5MB-10MB-20MB-40MB.
 Scanners are Async.
 
 The Free Ratoc Configurator Tool for PowerMac G4 works in OSX SnowLeopard 10.6.8 for intel with Rosetta PPC CPU emulator if installed.
