@@ -34,7 +34,7 @@ If Using ATTO UL5D PCIe card, requires to be turned-on since PC is turned-On,
 latest drivers for OSX here:
 https://macintoshgarden.org/apps/atto-ul4x-and-ul5x-scsi-ultra-320-drivers
 https://www.macintoshrepository.org/33038-atto-ul4x-and-ul5x-scsi-ultra-320-drivers
-Latest UL5D configtool & Firmware for Windows & Linux
+Latest UL5D configtool, Firmware & Drivers for Windows & Linux
 https://members.driverguide.com/driver_search.php
 
 ATTO has many more options to configure,
