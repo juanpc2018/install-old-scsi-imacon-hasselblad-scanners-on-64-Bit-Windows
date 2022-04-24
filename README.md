@@ -45,9 +45,9 @@ requires Special Cable from VHDCI-M to Centronics 50-pin Male,
 http://www.granitedigital.com/688mmvhdm-50centm3.aspx
 http://www.granitedigital.com/688mmvhdm-50centm6.aspx
 
-SCSI Scanners Require an Active or Passive Centronics SCSI 50-pin Male terminator dongle.
-SCSI Terminator is Not Low to GND, is High to Vcc-2vDC, Active Terminator Recomended, has voltage regulators.
-The best made were by GraniteDigital Part# 7359
+SCSI Requires an Active or Passive Centronics SCSI 50-pin Male terminator dongle.
+SCSI Terminator is Not Low to GND, is High to 66% +Vcc, Active Terminator Recomended, has voltage regulators more precise than Passive Restor Network or Diode Voltage Divider.
+The best made were from GraniteDigital Part# 7359
 http://www.granitedigital.com/50pincentronicsm.aspx
 http://www.granitedigital.com/scsispecsheet.aspx
 
