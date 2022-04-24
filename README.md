@@ -8,10 +8,15 @@ requires a small modification to allow Windows Imagine Devices to Detect the Dri
 
 Tested:
 XP 64-Bit
+
 Vista 64-Bit
+
 Windows7 64-Bit
+
 Windows 8.1 64-Bit
+
 Windows 10 64-Bit
+
 Windows 11 untested.
 
 Problem #1.
